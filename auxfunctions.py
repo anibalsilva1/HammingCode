@@ -26,39 +26,6 @@ p2 = xor de todos os bits que estejam na posicao (*1*)
 p3 = xor de todos os bits que estejam na posicao (1**)
 '''
 
-# def setParityBits(y):
-    
-#     for i in range(1,len(y)):
-    
-#         value = 0
-#         bit1=BitArray(int=i,length=len(y))
-#         bit1_reversed = bit1[::-1]
-#         position_1_bit_1 = list(bit1_reversed.findall('0b1')) # terá sempre apenas 1 posição
-        
-#         if (i & (i-1)==0):
-            
-#             for j in range(1+i,len(y)):
-                
-#                 if not (j & (j-1) == 0):
-                    
-#                     bit2=BitArray(int=j,length=len(y))
-#                     bit2_reversed= bit2[::-1]
-                    
-#                     position_2_bit_2 = list(bit2_reversed.findall('0b1'))
-                    
-#                     for m in range(len(position_2_bit_2)):
-#                         if position_1_bit_1[0] == position_2_bit_2[m]:
-                            
-#                             #print("computing XOR of",value,"with y[",j,"],",y[j])
-                            
-#                             value = value ^ y[j]
-                            
-#                              #print("which gives",value)
-#             #print("So y[",i,"]=",value)
-#             y[i] = value
-#     return y.bin
-
-
 
 def setParityBits(y):
     
